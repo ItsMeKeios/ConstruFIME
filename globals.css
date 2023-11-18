@@ -147,6 +147,9 @@
       "SearchBar"
       "Products";
     height: 90%;
+    background-image: url(./imgs/Background_Productos.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
   .SearchBar { 
