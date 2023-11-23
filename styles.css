@@ -342,3 +342,7 @@ body {
 .back-to-products:hover {
   background-color: #004d00; /* Cambio de color al pasar el ratón */
 }
+
+.product-details{
+    font-family: 'TextoGeneral';
+}
