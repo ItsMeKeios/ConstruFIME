@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>ConstruFIME</title>
+    <script src="navbarSticky.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("a").on('click', function (event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+
+        <div id="navbar">
+            <a class="box" href="https://wa.me/528110790711?text=Me%20Gustaria%20Cotizar%20Un%20Pedido.">¡Pregunta Aqui!</a>
+            <a class="colorNavbar" href="#Contactanos">Contactanos</a>
+            <a class="colorNavbar" href="#Productos">Productos</a>
+            <a class="colorNavbar" href="#QuienesSomos">¿Quienes Somos?</a>
+            <a class="colorNavbar" href="#Bienvenidos">Inicio</a>
+            <div class="Logo">ConstruFIME</div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('#filterInput').on('input', function () {
+                    var searchText = $(this).val().toLowerCase();
+
+                    $('.FilterableObjects').each(function () {
+                        var currentText = $(this).text().toLowerCase();
+                        if (currentText.indexOf(searchText) !== -1) {
+                            $(this).show();
+                        } else {
+                            $(this).hide();
+                        }
+                    });
+                });
+            });
+        </script>
+
+<section class="product-details" id="CementoDetails">
+    <br>
+    <div class="container-details">
+        <br>
+        <h2 class="details-title">Detalles del Producto</h2>
+        <div class="product-info">
+            <img src="./imgs/tuercas.png" alt="Cemento" class="product-image">
+            <div class="details-text">
+                <h3 class="product-title">Tuercas</h3>
+                <p class="product-price">$30.00</p>
+                <p class="product-description">Nuestras tuercas de alta resistencia están diseñadas 
+                    para ofrecer un rendimiento excepcional en entornos industriales y proyectos de construcción exigentes. 
+                    Fabricadas con materiales duraderos y procesos de alta precisión, 
+                    estas tuercas son la opción perfecta para garantizar una conexión segura y confiable en tus proyectos.</p>
+                <p class="product-features">Características:</p>
+                <ul class="features-list">
+                    <li>Material de Resistencia Superior.</li>
+                    <li>Resistencia a la Corrosión.</li>
+                    <li>Variedad de Tamaños y Métricas.</li>
+                </ul>
+                <p class="product-measurements">Medidas:     <br>
+                    Tamaños estándar y métricos disponibles, que van desde M4 hasta M30</p>
+            </div>
+        </div>
+        <a class="back-to-products" href="index.html">Volver a Productos</a>
+    </div>
+</section>
+
+
+        </section>
+        <section class="sec4" id="Contactanos">
+            <div class="container4">
+                <div class="Redes">
+                    <h2 class="TitleC">Redes Sociales</h2>
+                        <h4 class="RedesS"><img id="RedesC" src="./imgs/facebook-1.png" width="30" height="30">&nbsp;&nbsp;&nbsp;ConstruFIME Oficial</h4>
+                        <h4 class="RedesS"><img id="RedesC" src="./imgs/facebook-5.png" width="30" height="30">&nbsp;&nbsp;&nbsp;ConstruFIME_Oficial</h4>
+                        <h4 class="RedesS"><img id="RedesC" src="./imgs/facebook-3.png" width="30" height="30">&nbsp;&nbsp;&nbsp;@ConstruFIME_Oficial</h4>
+                        <h4 class="RedesS"><img id="RedesC" src="./imgs/facebook-4.png" width="30" height="30">&nbsp;&nbsp;&nbsp;@ConstruFIME</h4>
+                        <h4 class="RedesS"><img id="RedesC" src="./imgs/facebook-2.png" width="30" height="30">&nbsp;&nbsp;&nbsp;ConstruFIME_YT</h4>
+                </div>
+                <div class="Ubicacion">
+                    <h2 class="TitleC">Encuentranos en:</h2>
+                    <ul>
+                        <li>67300, Carr Nacional 507, San Javier, Santiago, N.L.</li><br><br><br>
+                        <li>Francisco Salazar 104, San José Nte, 67320 Santiago, N.L.</li>
+                    </ul>
+                </div>
+                <div class="FAQ">
+                    <h2 class="TitleC" style="margin-right: 30px;">Acerca de ConstruFIME</h2>
+                    <ul>
+                        <li>Terminos y Condiciones</li><br>
+                        <li>Politicas de Privacidad</li><br>
+                        <li>Sugerencias</li><br>
+                        <li>FAQ</li>
+                    </ul>
+                    <br><br><br>
+                    <div class="final">©2023 ConstruFIME S.A de C.V</div>
+                </div>
+              </div>
+        </section>
+    </div>
+</body>
+
+</html>

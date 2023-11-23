@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>ConstruFIME</title>
+    <script src="navbarSticky.js" defer></script>
+</head>
+<body>    
+<div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        } 
+      });
+    });
+    </script>
+
+    <div id="navbar">
+        <a class="box" href="https://wa.me/528110790711?text=Me%20Gustaria%20Cotizar%20Un%20Pedido.">¡Pregunta Aqui!</a>
+        <a class="colorNavbar" href="#Contactanos">Contactanos</a>
+        <a class="colorNavbar" href="#Productos">Productos</a>
+        <a class="colorNavbar" href="#QuienesSomos">¿Quienes Somos?</a>
+        <a class="colorNavbar" href="#Bienvenidos">Inicio</a>
+        <div class="Logo">ConstruFIME</div>
+    </div>
+
+    <section class="sec1" id="Bienvenidos">
+        <div class="container1" style="background-image: url(./imgs/background_bienvenidos.jpg); background-size:cover; background-repeat: no-repeat;">
+            <div class="LogoImage"><img src="./imgs/logo-construfime-2.png" width="300px" height="300px"></div>
+            <div class="Text">
+              <div class="Eslogan mega">“Calidad en Cada Ladrillo, Cada Paso del Camino.”</div>
+              <div class="Descripcion sub">ConstruFIME es una destacada empresa de construcción reconocida por su compromiso con la calidad y la innovación. Ofrecen soluciones integrales en construcción con un enfoque centrado en el cliente y la sostenibilidad.</div>
+            </div>
+            <div class="Values">
+              <div class="Value1 valores"><img src="./imgs/valor1.png" width="90px" height="90px"><h3 class="ValoresText">Para todo tipo de Construccion</h3></div>
+              <div class="Value2 valores"><img src="./imgs/valor2.png" width="90px" height="90px"><h3 class="ValoresText">Entrega de Material</h3></div>
+              <div class="Value3 valores"><img src="./imgs/valor3.png" width="90px" height="90px"><h3 class="ValoresText">Equipo Profesional</h3></div>
+            </div>
+          </div>
+    </section>
+
+    <section class="sec2" id="QuienesSomos">
+        <div class="container2" style="background-image: url(./imgs/background-somos-1.png); background-size:cover; background-repeat: no-repeat;">
+            <div class="SomosText">
+                <div class="SomosTitle">
+                    <h1 class="Title">¿Que es lo que nosotros Hacemos?</h1>
+                    <h3 class="Text">Estos son solo algunos de los proyectos en los que nos especializamos. Trabajo eficiente y eficaz a tu alcance.</h3>
+                </div>
+              <div class="SomosImg"><img class="SomosImg" src="./imgs/Somos.png" alt=""></div>
+            </div>
+            <div class="Ofrecemos">
+              <div class="Of1">
+                <div class="Cuadros Somos3">Transporte Multiusos <img src="./imgs/transporte2-1.png" height="235px" width="150px"></div>
+              </div>
+              <div class="Of2">
+                <div class="Cuadros Somos3">Gran Catálogo de Materiales <img src="./imgs/equipo-1.png" height="235px" width="150px"></div>
+              </div>
+              <div class="Of3">
+                <div class="Cuadros Somos3">Renta de Equipo Profesional <img src="./imgs/venta2-1.png" height="235px" width="150px"></div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <script>
+        $(document).ready(function(){
+            $('#filterInput').on('input', function() {
+                var searchText = $(this).val().toLowerCase();
+                
+                $('.FilterableObjects').each(function() {
+                    var currentText = $(this).text().toLowerCase();
+                    if (currentText.indexOf(searchText) !== -1) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });
+    </script>
+
+    <section class="sec3" id="Productos">
+        <div class="container3">
+            <div class="SearchBar">
+                <label class="labelStyle" for="filterInput">Búsqueda de Articulos: </label>
+                <input type="text" id="filterInput" placeholder="   Ingrese el Nombre del Material...">
+                <div class="SearchImage"><img src="./imgs/searchbar.png" width="25px" height="25px"></div>
+            </div>
+            <div class="Products">
+                <div id="Cemento" class="FilterableObjects">
+                    <h2 class="ptitle">Cemento - $ 149.99</h2>
+                    <img src="./imgs/cemento.png" width="150" height="100">
+                    <a class="more" href="cemento.html">Mas Detalles Aquí</a>
+                </div>
+                <div id="Block" class="FilterableObjects">
+                    <h2 class="ptitle">Block - $12.00</h2>
+                    <img src="./imgs/block.png" width="150" height="100">
+                    <a class="more" href="block.html">Mas Detalles Aquí</a></div>
+                <div id="Tornillos" class="FilterableObjects">
+                    <h2 class="ptitle">Tornillos - $30.00</h2>
+                    <img src="./imgs/tornillo.png" width="150" height="100">
+                    <a class="more" href="tornillo.html">Mas Detalles Aquí</a></div>
+                <div id="Accesorios" class="FilterableObjects">
+                    <h2 class="ptitle">Accesorios - $20.00</h2>
+                    <img src="./imgs/accesorios.png" width="150" height="100">
+                    <a class="more" href="accesorios.html">Mas Detalles Aquí</a></div>
+                <div id="Madera" class="FilterableObjects">
+                    <h2 class="ptitle">Madera - $40.00</h2>
+                    <img src="./imgs/madera.png" width="150" height="100">
+                    <a class="more" href="madera.html">Mas Detalles Aquí</a></div>
+                <div id="Pintura" class="FilterableObjects">
+                    <h2 class="ptitle">Pintura - $99.99</h2>
+                    <img src="./imgs/pintura.png" width="150" height="100">
+                    <a class="more" href="pintura.html">Mas Detalles Aquí</a></div>
+                <div id="PVC" class="FilterableObjects">
+                    <h2 class="ptitle">PVC - $20.00</h2>
+                    <img src="./imgs/pvc.png" width="150" height="100">
+                    <a class="more" href="PVC.html">Mas Detalles Aquí</a></div>
+                <div id="Varilla" class="FilterableObjects">
+                    <h2 class="ptitle">Varilla - $50.00</h2>
+                    <img src="./imgs/varilla.png" width="150" height="100">
+                    <a class="more" href="varilla.html">Mas Detalles Aquí</a></div>
+                <div id="Tuercas" class="FilterableObjects">
+                    <h2 class="ptitle">Tuercas - $30.00</h2>
+                    <img src="./imgs/tuercas.png" width="150" height="100">
+                    <a class="more" href="tuercas.html">Mas Detalles Aquí</a></div>
+                </div>
+            </div>
+    </section>
+    <section class="sec4" id="Contactanos">
+        <div class="container4">
+            <div class="Redes">
+                <h2 class="TitleC">Redes Sociales</h2>
+                    <h4 class="RedesS"><img id="RedesC" src="./imgs/facebook-1.png" width="30" height="30">&nbsp;&nbsp;&nbsp;ConstruFIME Oficial</h4>
+                    <h4 class="RedesS"><img id="RedesC" src="./imgs/facebook-5.png" width="30" height="30">&nbsp;&nbsp;&nbsp;ConstruFIME_Oficial</h4>
+                    <h4 class="RedesS"><img id="RedesC" src="./imgs/facebook-3.png" width="30" height="30">&nbsp;&nbsp;&nbsp;@ConstruFIME_Oficial</h4>
+                    <h4 class="RedesS"><img id="RedesC" src="./imgs/facebook-4.png" width="30" height="30">&nbsp;&nbsp;&nbsp;@ConstruFIME</h4>
+                    <h4 class="RedesS"><img id="RedesC" src="./imgs/facebook-2.png" width="30" height="30">&nbsp;&nbsp;&nbsp;ConstruFIME_YT</h4>
+            </div>
+            <div class="Ubicacion">
+                <h2 class="TitleC">Encuentranos en:</h2>
+                <ul>
+                    <li>67300, Carr Nacional 507, San Javier, Santiago, N.L.</li><br><br><br>
+                    <li>Francisco Salazar 104, San José Nte, 67320 Santiago, N.L.</li>
+                </ul>
+            </div>
+            <div class="FAQ">
+                <h2 class="TitleC" style="margin-right: 30px;">Acerca de ConstruFIME</h2>
+                <ul>
+                    <li>Terminos y Condiciones</li><br>
+                    <li>Politicas de Privacidad</li><br>
+                    <li>Sugerencias</li><br>
+                    <li>FAQ</li>
+                </ul>
+                <br><br><br>
+                <div class="final">©2023 ConstruFIME S.A de C.V</div>
+            </div>
+          </div>
+    </section>
+</div> 
+</body>
+</html>
