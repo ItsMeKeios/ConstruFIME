@@ -240,3 +240,105 @@ ul{
   border-top: 3px;
   color: white;
 }
+
+/* Estilos mejorados para la sección de detalles del producto */
+body {
+  background-color: #706f6f; /* Gris para el fondo de toda la página */
+  margin: 0;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos mejorados para la sección de detalles del producto */
+.container-details {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  background-color: #ffffff; /* Blanco para el fondo de .container-details */
+  border: 1px solid #ffffff; /* Borde blanco */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Sombra blanca */
+  color: #000; /* Texto negro */
+}
+
+.details-title,
+.product-info {
+    color: #006400; /* Verde oscuro para el título y la información del producto */
+}
+
+.details-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.product-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  max-width: 250px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
+.details-text {
+  text-align: left;
+}
+
+.product-title {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.product-price {
+  color: #006400;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.product-features {
+  color:  #006400;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.features-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #333;
+}
+
+.product-measurements {
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.back-to-products {
+  background-color: #006400; /* Fondo verde oscuro para el enlace "Volver a Productos" */
+  color: #fff; /* Texto blanco para el enlace "Volver a Productos" */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-products:hover {
+  background-color: #004d00; /* Cambio de color al pasar el ratón */
+}
