@@ -344,5 +344,8 @@ body {
 }
 
 .product-details{
+    background-image: url(./imgs/Background_Productos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'TextoGeneral';
 }
